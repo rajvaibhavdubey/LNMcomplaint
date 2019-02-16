@@ -1,0 +1,224 @@
+*, :before, :after {
+    box-sizing: inherit;
+    font: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: .3s;
+}
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #D8F1D3;
+  color: #D8F1D3;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+aside{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height:100%;
+  background-color: #333;
+  color: #fff;
+}
+
+aside .sidebar-main{
+  padding: 0 20px;
+  padding-bottom: 20px;
+  height: calc(100% - 70px);
+  overflow-y: auto;
+}
+
+aside header{
+  padding: 20px;
+}
+
+aside .logo{
+  color:#48F2ED;
+  font-size: 2.5em;
+  font-weight: 700;
+  position: relative;
+  padding-left: 30px;
+}
+
+aside .logo:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  margin-left: -20px;
+  background-image: url(../imgs/final_logo.png);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: center;
+}
+
+aside form{
+  font-size:1.5em;
+}
+
+
+aside label{
+  position: relative;
+  display: block;
+}
+
+aside label input{
+  background:none;
+  display: block;
+  margin:10px 0;
+  padding:10px 0;
+}
+
+
+aside label div{
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #777;
+}
+
+aside button{
+  font-size: 0.7em;
+  background:rgba(127, 127, 127, 0.2);
+  border-radius: 4px;
+  padding:10px 15px;
+}
+
+.separator{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(127, 127, 127, 0.3);
+  margin:20px 0;
+}
+
+aside h2{
+  color:rgba(255, 255,255, 0.8);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.2em;
+}
+
+aside .sidebar_controls{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.2);
+  background-color: inherit;
+  height: 70px;
+  padding: 10px;
+}
+
+aside .sidebar_controls .left{
+  float: left;
+}
+
+aside .sidebar_controls button{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin:10px;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+.sidebarhidden aside {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%); }
+  .sidebarhidden aside .sidebar_controls {
+    -webkit-transform: translateX(70px);
+    transform: translateX(70px); }
+
+.sidebarhidden .messages {
+  width: 100%; }
+
+.sidebarhidden .sendbar {
+  width: calc(100% - 70px); }
+
+
+aside .sidebar_controls .right{
+  float: right;
+}
+.showonlogin{
+  display: block;
+}
+.messages{
+  position: absolute;
+  top: 0;
+  right:0;
+  width: calc(100% - 250px);
+  height: calc(100% - 70px);
+  padding:20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color:#D8F1D3; 
+}
+
+.sendbar{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: calc(100% - 250px);
+  height: 70px;
+  background-color:#D8F1D3; 
+  box-shadow:0 -1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.sendbar_attach{
+  margin: 10px;
+}
+
+.sendbar_attach button{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin:10px;
+}
+
+.sendbar_compose{
+  box-sizing: inherit;
+}
+
+.sendbar_compose_input{
+  min-height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  margin: 10px;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  transition-property: box-shadow;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24); 
+}
+ .chat_area li .chat-img1 img {
+            height: 40px;
+            width: 40px;
+        }
+.chat-name{
+  font-size: 17px;
+  font-weight: 600;
+  color: #4aa1f3;
+}
